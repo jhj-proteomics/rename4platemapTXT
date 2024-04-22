@@ -30,11 +30,11 @@ def rename_files(directory, file_mapping):
             print(f"Renamed {old_path} to {new_path}")
 
 # Path to the CSV file containing the plate map
-csv_path = r"C:\Users\skl448\Desktop\phd\data\zooms\phd_data\phd_data_sjaelland\plate_map_odense_16042024.csv"
+csv_path = r"C:\Users\[username]\Desktop\[path to plate map in .csv]"
 sample_names = load_sample_names(csv_path)  # Load and prepare sample names from CSV
 
 # Directory where your files are stored
-directory_path = r"C:\Users\skl448\Desktop\phd\data\zooms\phd_data\phd_data_sjaelland\second_run\.txt"
+directory_path = r"C:\Users\[username]\Desktop\[path to sample files in .txt]"
 file_mapping = generate_file_mapping(sample_names)  # Generate the mapping from the sample names list
 
 rename_files(directory_path, file_mapping)  # Rename the files in the specified directory
